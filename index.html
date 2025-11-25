@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Blue & Gold Webpage</title>
+    <title>Golden State Warriors Fan Page</title>
 
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="warriorsstyles.css">
@@ -10,17 +10,198 @@
 
 <body>
 
-    <h1>Welcome to My Warriors Themed Webpage</h1>
+    <header class="site-header">
+        <div class="logo-title">
+            <div class="logo-circle">GSW</div>
+            <div>
+                <h1>Golden State Warriors Fan Page</h1>
+                <p class="tagline">Blue &amp; Gold. Bay Area Basketball.</p>
+            </div>
+        </div>
 
-    <!-- Image -->
-    <img src="stephklaydrayiggy.png" alt="The Squad" class="warriors-img">
+        <nav class="main-nav">
+            <a href="#about">History</a>
+            <a href="#season">Current Season</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#fun-facts">Fun Facts</a>
+        </nav>
+    </header>
 
-    <br>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Dub Nation, Stand Up!</h2>
+                <p>
+                    Welcome the Golden State Warriors Fan page.
+                    Learn about the team’s history, their current season, and some fun facts.
+                </p>
+            </div>
 
-    <!-- Link -->
-    <a href="https://www.youtube.com/watch?v=jSVpSRjJY1E" target="_blank">
-        Visit This Link
-    </a>
+            <!-- Required Image -->
+            <div class="hero-image-wrapper">
+                <img src="stephklaydrayiggy.png"
+                     alt="Basketball image">
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section id="about" class="content-section">
+            <h2>Team History</h2>
+            <p>
+                The <strong>Golden State Warriors</strong> were founded in <strong>1946</strong>
+                as the <em>Philadelphia Warriors</em>, one of the original teams of the
+                Basketball Association of America (BAA), which later became the NBA.
+            </p>
+            <p>
+                In <strong>1962</strong>, the franchise moved to California and became the
+                <em>San Francisco Warriors</em>. In <strong>1971</strong>, they changed their
+                name to the <strong>Golden State Warriors</strong> to represent the entire state.
+                The team played many years in Oakland before moving to the state-of-the-art
+                <strong>Chase Center</strong> in San Francisco for the 2019–20 season.
+            </p>
+
+            <div class="history-highlight">
+                <h3>Championships</h3>
+                <p>
+                    The Warriors have won <strong>7 NBA championships</strong>:
+                </p>
+                <ul>
+                    <li>1947 &amp; 1956 (Philadelphia era)</li>
+                    <li>1975 (Rick Barry-led upset over the Washington Bullets)</li>
+                    <li>2015, 2017, 2018, 2022 (the Stephen Curry era)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Current Season Section -->
+        <section id="season" class="content-section">
+            <h2>2025–26 Season Snapshot</h2>
+
+            <div class="season-card">
+                <h3>Record (as of Nov 25, 2025)</h3>
+                <p class="record">
+                    <span class="record-number">9–8</span>
+                    <span class="record-label">Wins – Losses</span>
+                </p>
+
+                <div class="season-stats">
+                    <div class="stat">
+                        <span class="stat-label">Pacific Division</span>
+                        <span class="stat-value">3rd Place</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Western Conference</span>
+                        <span class="stat-value">8th Place</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Home Arena</span>
+                        <span class="stat-value">Chase Center</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Head Coach</span>
+                        <span class="stat-value">Steve Kerr</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="note">
+                This is just a static homework page, so the record will not update automatically.
+                You could later connect this page to a live API for real-time stats.
+            </p>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="content-section">
+            <h2>Upcoming Games</h2>
+            <p>
+                Here’s a quick look at the next few games on the Warriors’ schedule:
+            </p>
+
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Opponent</th>
+                        <th>Home/Away</th>
+                        <th>Time (PT)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nov 26, 2025</td>
+                        <td>Houston Rockets</td>
+                        <td>Home</td>
+                        <td>7:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Nov 29, 2025</td>
+                        <td>New Orleans Pelicans</td>
+                        <td>Home</td>
+                        <td>5:30 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Dec 2, 2025</td>
+                        <td>Oklahoma City Thunder</td>
+                        <td>Home</td>
+                        <td>8:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Dec 4, 2025</td>
+                        <td>Philadelphia 76ers</td>
+                        <td>Away</td>
+                        <td>4:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Dec 6, 2025</td>
+                        <td>Cleveland Cavaliers</td>
+                        <td>Away</td>
+                        <td>4:30 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Fun Facts Section -->
+        <section id="fun-facts" class="content-section">
+            <h2>Fun Facts About the Warriors</h2>
+            <ul class="fun-facts-list">
+                <li>
+                    In the 2015–16 season, the Warriors finished with a
+                    <strong>73–9</strong> record, the best regular-season record in NBA history.
+                </li>
+                <li>
+                    <strong>Stephen Curry</strong> became the first player in NBA history to be
+                    named unanimous MVP in 2016 and is widely regarded as the greatest
+                    shooter of all time.
+                </li>
+                <li>
+                    In 2016–17, the Warriors had <strong>four All-Stars</strong> in the
+                    same season: Curry, Kevin Durant, Klay Thompson, and Draymond Green.
+                </li>
+                <li>
+                    The 1975 Warriors championship over the Washington Bullets is often
+                    considered one of the biggest upsets in NBA Finals history.
+                </li>
+                <li>
+                    The team’s colors—blue and gold—reflect both the California state flag
+                    and the Golden Gate Bridge.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Made for a web design assignment about the Golden State Warriors.</p>
+
+        <!-- Required internet link -->
+        <p>
+            Want a surprise?  
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                Click this special Warriors fan link
+            </a>
+        </p>
+    </footer>
 
 </body>
 </html>
